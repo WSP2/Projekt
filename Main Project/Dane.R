@@ -4,6 +4,8 @@
 ##############################################################################
 #install.packages("R.matlab")
 library(R.matlab)
-pathname <- file.path("~/R/Projekt/Data", "genes_list.mat")
+C<-getwd()
+C=sub("Main Project", "Data", C)
+pathname <- file.path(C, "genes_list.mat")
 data <- readMat(pathname) 
 

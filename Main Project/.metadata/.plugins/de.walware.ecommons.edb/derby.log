@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Sun May 03 00:34:41 CEST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-014d-16c4-6b56-ffffebe9d735 
+on database directory C:\Users\Filip\Documents\R\Projekt\Main Project\.metadata\.plugins\de.walware.statet.r.core\db with class loader org.eclipse.osgi.internal.loader.EquinoxClassLoader@1d9ff1e2[de.walware.3rdparty-org.apache.derby.core:10.10.2000000.b201503012200E44sw(id=192)] 
+Loaded from file:/C:/Users/Filip/Documents/R/eclipse/plugins/de.walware.3rdparty-org.apache.derby.core_10.10.2000000.b201503012200E44sw.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_25-b18
+user.dir=C:\Users\Filip\Documents\R\eclipse
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=C:\Users\Filip\Documents\R\Projekt\Main Project\.metadata\.plugins\de.walware.ecommons.edb
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun May 03 00:38:52 CEST 2015: Shutting down Derby engine
+----------------------------------------------------------------
+Sun May 03 00:38:54 CEST 2015:
+Shutting down instance a816c00e-014d-16c4-6b56-ffffebe9d735 on database directory C:\Users\Filip\Documents\R\Projekt\Main Project\.metadata\.plugins\de.walware.statet.r.core\db with class loader org.eclipse.osgi.internal.loader.EquinoxClassLoader@1d9ff1e2[de.walware.3rdparty-org.apache.derby.core:10.10.2000000.b201503012200E44sw(id=192)] 
+----------------------------------------------------------------

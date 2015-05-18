@@ -6,7 +6,11 @@ library('affy')
 biocLite('gahgu95av2.db')
 library(gahgu95av2.db)
 library(convert)
-data = read.table("datasetA_scans.txt", header = TRUE,sep = "\t" )
+setwd("~/Projekt/Main Project")
+C<-getwd()
+C=sub("Main Project", "Data", C)
+pathname <- file.path(C, "datasetA_scans.txt")
+data = read.table(pathname, header = TRUE,sep = "\t" )
 data = data[c(191:193, 211:213),]
 opis = read.AnnotatedDataFrame("datasetA_scans.txt", sep = "\t", header = TRUE, row.names = 4, stringsAsFactors = F)
 opis = opis[c(191:193, 211:213),]

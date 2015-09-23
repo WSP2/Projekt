@@ -34,7 +34,7 @@ dataRMA_normal=data2RMA[16:30,]
   var.test(dataRMA_cancer,dataRMA_normal) #sprawdzmy czy jest roznorodnosc wariancji
   t = t.test(dataRMA_cancer,dataRMA_normal) # to chyba trzeba by by?o zzapisa? do jakiego? pliku
   
-  #wilcoxon? robic?
+#wilcoxon? robic?
 
 #heatmapa
 #zapisywanie do jpg-a

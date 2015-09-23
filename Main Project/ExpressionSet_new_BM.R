@@ -1,27 +1,27 @@
 source("http://bioconductor.org/biocLite.R")
-biocLite("BioUpgrade")
+#biocLite("BioUpgrade")
 library(Biobase)
-biocLite('affy')
+#biocLite('affy')
 library('affy')
-biocLite('gahgu95av2.db')
+#biocLite('gahgu95av2.db')
 library(gahgu95av2.db)
 
-install.packages(pkgs='gplots')
-#library(gplots)
-biocLite("convert")
-#library(convert)
+#install.packages(pkgs='gplots')
+library(gplots)
+#biocLite("convert")
+library(convert)
 
 ###wczytanie plików .CEL -> obiekt AffyBatch
 C<-getwd()
 C=sub("Main Project", "Data", C)
 pathname <- file.path(C, "datasetA_scans.txt")
 data = read.table(pathname, header = T,sep = "\t" )
-data = data[c(191:206, 211:226),]
+data = data[c(191:205, 211:225),]
 
 ###summary(data)
 
 opis = read.AnnotatedDataFrame(pathname, sep = "\t", header = T, row.names = 4, stringsAsFactors = F)
-opis = opis[c(191:206, 211:226),]
+opis = opis[c(191:205, 211:225),]
 ###look=head(pData(opis),n=nrow(opis)) #opis probek
 sampleNames(opis) = paste(sampleNames(opis), ".CEL", sep = "")
 data_Affy = ReadAffy(filenames=sampleNames(opis), verbose = T)

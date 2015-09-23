@@ -5,7 +5,10 @@
 # sprawdzenie przynależnosci do konkretnego klastra i zapisywanie do 
 #osobnej macierzy.
 
-  dataRMA = t(dataRMA)
+ is.matrix(results)
+  quest =as.numeric(readline("Aby wykonać testy powinna zostać przeprowadzona klasteryzacja? Czy chcesz ją zrobić teraz? T/F"))
+  if (quest==T)
+    
   #carcinoid
   dlugosc = c(length(results[,1]))
   dlugosc_kol = c(length(results[1,]))
